@@ -1,0 +1,1 @@
+SELECT DISTINCT productname, categoryname FROM tablename
