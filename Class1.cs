@@ -14,14 +14,14 @@ namespace FigureTest
             Array.Sort(a);
             if (a[0]==0 && a[1]!=0)
             {
-                Console.WriteLine("wrong input");//writelin'ы можно перенести в основную часть
+                //Console.WriteLine("wrong input");//writelin'ы можно перенести в основную часть
                 return -1;
             }
             if (a[0] == 0 && a[1] == 0)
             {
                 const double pi = 3.14159265359;
                 double circle = pi * (a[2] * a[2]);
-                Console.WriteLine("it's a circle");
+                //Console.WriteLine("it's a circle");
                 return circle;
             } 
             else
@@ -29,7 +29,7 @@ namespace FigureTest
                 double per = (arg1 + arg2 + arg3) / 2;
                 double triangle = per*(per-arg1)*(per-arg2)*(per-arg3);
                 int type = TriangleType(a);
-                switch (type){
+                /*switch (type){
                     case 1:
                         Console.WriteLine("it's a right triangle");
                         break;
@@ -43,7 +43,8 @@ namespace FigureTest
                         Console.WriteLine("wrong input for triangle");
                         return -1;
                         
-                }
+                }*/
+                if (type == -1) return -1;
                 return Math.Sqrt(triangle);
             }
         }
